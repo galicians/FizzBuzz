@@ -14,4 +14,8 @@ describe FizzBuzz do
 	it "knows when a number is divisible by 15" do
 		expect(fizzbuzz.is_divisible_by_fifteen?(15)).to be true
 	end
+
+	it 'works only with numbers' do
+		expect{fizzbuzz.is_divisible_by_three?('3')}.to raise_error("RuntimeError")
+	end
 end
