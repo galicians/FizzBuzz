@@ -34,5 +34,12 @@ describe FizzBuzz do
 		it "FizzBuzz when a number is divisible by 15" do
 			expect(fizzbuzz.say(15)).to eq('FizzBuzz')
 		end
+		it "the number when is not divisible by 3, 5 or 15" do
+			expect(fizzbuzz.say(7)).to eq(7)
+		end
 	end	
 end
+
+# fizzbuzz = FizzBuzz.new
+# [*1..45].each do {|number| fizzbuzz.say(number)}
+

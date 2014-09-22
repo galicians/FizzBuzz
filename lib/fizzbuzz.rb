@@ -21,6 +21,9 @@ class FizzBuzz
 		return 'FizzBuzz' if divisible(number,15)
 		return 'Fizz' if divisible(number,3)
 		return 'Buzz' if divisible(number,5)
+		number
 	end
 end
 
+fizzbuzz = FizzBuzz.new
+[*1..100].each {|number| puts fizzbuzz.say(number)}
