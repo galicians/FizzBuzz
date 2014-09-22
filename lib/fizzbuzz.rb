@@ -16,5 +16,11 @@ class FizzBuzz
 		raise "RuntimeError" if number.class != Fixnum
 		number % divisor == 0
 	end
+
+	def say(number)
+		return 'FizzBuzz' if divisible(number,15)
+		return 'Fizz' if divisible(number,3)
+		return 'Buzz' if divisible(number,5)
+	end
 end
 
